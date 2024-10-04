@@ -56,6 +56,7 @@
     }
 }
 .modalrecieve {
+    font-size: 0.75rem;
     display: none;
     /* ซ่อน modal ไว้ก่อน จนกว่าจะถูกแสดง */
     position: fixed;
