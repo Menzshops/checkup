@@ -1,0 +1,18 @@
+const apiKey = 'AIzaSyB42FEfQ7FBJdraDbAqBB3KdG_Nt0-I4tU';
+const spreadsheetId = '1Vlbfxl6aQq9FOBiM2RyoFLIo5L0lOwCaQogrG4nxj8A';
+const rangesheet1 = 'Main!A3:ZZ'; 
+const rangesheet2 = 'Outlab!A2:ZZ';
+const rangesheet3 = 'customer!B2:C'
+
+function updateDateTime() {
+    const now = new Date();
+    const date = now.toLocaleDateString('th-TH');
+    const time = now.toLocaleTimeString('th-TH');
+    document.getElementById('datetime').innerHTML = `${date} ${time}`;
+}
+
+// เรียกฟังก์ชันทุกวินาทีเพื่ออัปเดตวันที่และเวลา
+setInterval(updateDateTime, 1000);
+
+// เรียกฟังก์ชันเมื่อโหลดหน้าเว็บ
+updateDateTime();
