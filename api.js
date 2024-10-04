@@ -16,3 +16,19 @@ setInterval(updateDateTime, 1000);
 
 // เรียกฟังก์ชันเมื่อโหลดหน้าเว็บ
 updateDateTime();
+
+
+function checkScreenSize() {
+    // ตรวจสอบขนาดหน้าจอว่ามีความกว้างน้อยกว่า 768px (ปกติเป็นขนาดของจอสมาร์ทโฟน)
+    if (window.innerWidth < 768) {
+        document.getElementById('message').style.display = 'block';
+    } else {
+        document.getElementById('message').style.display = 'none';
+    }
+}
+
+// เรียกฟังก์ชันเมื่อโหลดหน้าเว็บ
+checkScreenSize();
+
+// เรียกฟังก์ชันทุกครั้งเมื่อมีการปรับขนาดหน้าจอ
+window.onresize = checkScreenSize;
