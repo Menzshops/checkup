@@ -28,7 +28,9 @@ function checkScreenSize() {
 }
 
 // เรียกฟังก์ชันเมื่อโหลดหน้าเว็บ
-checkScreenSize();
 
-// เรียกฟังก์ชันทุกครั้งเมื่อมีการปรับขนาดหน้าจอ
-window.onresize = checkScreenSize;
+
+function printResult() {
+    
+    window.print(); // ใช้คำสั่ง print เพื่อพิมพ์เฉพาะส่วนผลลัพธ์
+  }
