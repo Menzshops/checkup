@@ -56,7 +56,7 @@
     }
 }
 .modalrecieve {
-    font-size: 0.75rem;
+   
     display: none;
     /* ซ่อน modal ไว้ก่อน จนกว่าจะถูกแสดง */
     position: fixed;
@@ -81,6 +81,9 @@
     /* ทำให้ modal อยู่เหนือ element อื่นๆ */
     border-radius: 10px;
     /* มุมโค้งของ modal */
+    .fs-1{
+       font-size: 0.75rem;  
+    }
   }
   .text-warn{
     background-color: aqua;
