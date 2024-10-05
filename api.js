@@ -20,7 +20,7 @@ updateDateTime();
 
 function checkScreenSize() {
    const message = document.getElementById('message');
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 768) {
         message.innerHTML+=  
         `<div class="modalrecieve" style="display: flex;">
        
