@@ -19,12 +19,12 @@ updateDateTime();
 
 
 function checkScreenSize() {
-   const message = document.getElementById('message');
+ 
     if (window.innerWidth < 768) {
-        ${'#message'}.style('display' , 'flex');
-        ${'#sub'}.style('display' , 'none');
-       ${'#dynamicDropdown'}.style('display' , 'none');
-       ${'#floatingPassword'}.style('display' , 'none');
+        ${'#message'}.css('display' , 'flex');
+        ${'#sub'}.css('display' , 'none');
+       ${'#dynamicDropdown'}.css('display' , 'none');
+       ${'#floatingPassword'}.css('display' , 'none');
     } else {
         document.getElementById('message').style('display' , 'none');
         document.getElementById('sub').disabled = True;
