@@ -31,8 +31,10 @@ function checkScreenSize() {
           </div>`;
 
         document.getElementById('message').style.display = 'block';
+        document.getElementById('sub').disabled = fales;
     } else {
         document.getElementById('message').style.display = 'none';
+        document.getElementById('sub').disabled = True;
     }
 }
 
