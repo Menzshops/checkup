@@ -18,17 +18,6 @@ setInterval(updateDateTime, 1000);
 updateDateTime();
 
 
-function checkScreenSize() {
- 
-    if (window.innerWidth < 768) {
-        $("#message").css('display','flex');
-        $("#recieve").css('display','none');
-     
-    } else {
-       $("#message").css('display','none');
-        $("#recieve").css('display','flex');
-    }
-}
 
 // เรียกฟังก์ชันเมื่อโหลดหน้าเว็บ
 
