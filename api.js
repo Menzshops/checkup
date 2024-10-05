@@ -19,8 +19,17 @@ updateDateTime();
 
 
 function checkScreenSize() {
-    // ตรวจสอบขนาดหน้าจอว่ามีความกว้างน้อยกว่า 768px (ปกติเป็นขนาดของจอสมาร์ทโฟน)
+   const message = document.getElementById('message');
     if (window.innerWidth < 768) {
+        message.innerHTML+=  
+        `<div class="modalrecieve" style="display: flex;">
+       
+            <h1 class="text-danger ms-5 fs-6 fw-bold">Please reverse your device to landscape</h1>
+            <div class="icon-spin">
+              <i class="fa-solid fa-repeat fa-spin"></i>
+           </div>
+          </div>`;
+
         document.getElementById('message').style.display = 'block';
     } else {
         document.getElementById('message').style.display = 'none';
