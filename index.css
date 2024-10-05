@@ -47,6 +47,11 @@
     .media-div {
         width: 100%; /* ขยายเต็มหน้าจอ */
     }
+    #recieve{
+        display: none;
+    }
+    #message{
+        display: flex;  
 }
 
 /* สำหรับหน้าจอขนาดใหญ่กว่า 1200px */
