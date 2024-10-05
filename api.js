@@ -22,7 +22,9 @@ function checkScreenSize() {
    const message = document.getElementById('message');
     if (window.innerWidth < 768) {
         document.getElementById('message').style('display' , 'flex');
-        document.getElementById('sub').disabled = false;
+        document.getElementById('sub').style('display' , 'none');
+        document.getElementById('dynamicDropdown').style('display' , 'none');
+        document.getElementById('floatingPassword').style('display' , 'none');
     } else {
         document.getElementById('message').style('display' , 'none');
         document.getElementById('sub').disabled = True;
