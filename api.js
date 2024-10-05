@@ -21,19 +21,10 @@ updateDateTime();
 function checkScreenSize() {
    const message = document.getElementById('message');
     if (window.innerWidth < 768) {
-        message.innerHTML+=  
-        `<div class="modalrecieve" style="display: flex;">
-       
-            <h1 class="text-danger ms-5 fs-6 fw-bold">Please reverse your device to landscape</h1>
-            <div class="icon-spin">
-              <i class="fa-solid fa-repeat fa-spin"></i>
-           </div>
-          </div>`;
-
-        document.getElementById('message').style.display = 'block';
+        document.getElementById('message').style('display' , 'flex');
         document.getElementById('sub').disabled = fales;
     } else {
-        document.getElementById('message').style.display = 'none';
+        document.getElementById('message').style('display' , 'none');
         document.getElementById('sub').disabled = True;
     }
 }
