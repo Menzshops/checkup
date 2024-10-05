@@ -21,10 +21,10 @@ updateDateTime();
 function checkScreenSize() {
  
     if (window.innerWidth < 768) {
-        ${'#message'}.css('display' , 'flex');
-        ${'#sub'}.css('display' , 'none');
-       ${'#dynamicDropdown'}.css('display' , 'none');
-       ${'#floatingPassword'}.css('display' , 'none');
+        $('#message').css('display' , 'flex');
+        $('#sub').css('display' , 'none');
+       $('#dynamicDropdown').css('display' , 'none');
+       $('#floatingPassword').css('display' , 'none');
     } else {
         document.getElementById('message').style('display' , 'none');
         document.getElementById('sub').disabled = True;
