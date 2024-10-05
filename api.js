@@ -22,10 +22,10 @@ function checkScreenSize() {
    const message = document.getElementById('message');
     if (window.innerWidth < 768) {
         document.getElementById('message').style('display' , 'flex');
-        document.getElementById('sub').disabled = fales;
+        document.getElementById('sub').disabled = 'false';
     } else {
         document.getElementById('message').style('display' , 'none');
-        document.getElementById('sub').disabled = True;
+        document.getElementById('sub').disabled = 'True';
     }
 }
 
