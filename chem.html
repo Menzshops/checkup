@@ -65,26 +65,38 @@
                 display: none;
             }
         }
-
-       .container-sm{
-        display: flex;
-      }
-      .container-right{
-        widht: 40%;
-      }
-      .container-left{
-        widht: 60%;
-      }
-    </style>
-     <div id="message">
+ .container-sm{
+          display: flex;
+          flex-direction: row;
+       
+          justify-content: space-between;
+        }
+        .container-left{
+          width: 85%;
       
-
+        }
+        .container-right{
+          width: 15%;
+     
+        }
+        .container-middle{
+          width: 60%;
+          flex-direction: row;
+          background-color: brown;
+        }
+        .container-link{
+          width: 40;
+          background-color: aqua;
+        }
+    </style>
+    <div id="message">
+      
   </div>
     <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom noprint">
       <div class="container">
      
         <div class="container-sm noprint" style="font-family: sarabun;">
-          <div class="container-left">
+          <div class="container-left noprint">
             <p>ระบบค้นหาผลการตรวจสุขภาพทางอินเตอร์เน็ต</p>
           </div>
           <div class="container-right ms-5 text-end noprint" id="datetime"></div>
@@ -93,6 +105,7 @@
                   
         <div class="container-sm noprint">
           <ul class="nav justify-content-start noprint" style="font-family: sarabun;">
+        
             <div class="d-flex gap-2 mb-3">
               <a href="index.html" class="btn btn-outline-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -119,7 +132,7 @@
                   <a class="nav-link"  href="ua.html">ปัสสาวะทั่วไป</a>
                 </li>
                 <li class="nav-item" >
-                  <a href="chem.html" class="nav-link active" aria-current="page"  aria-disabled="true">ผลวิเคราะห์ทางห้องปฎิบัติการ</a>
+                  <a class="nav-link active" aria-current="page"  aria-disabled="true">ผลวิเคราะห์ทางห้องปฎิบัติการ</a>
                 </li>
                 <li class="nav-item text-end">
                   <a class="nav-link" href="bio.html">ชีวอนามัย</a>
