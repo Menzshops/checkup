@@ -67,25 +67,37 @@
             }
         }
       .container-sm{
-        display: flex;
-      }
-      .container-right{
-        widht: 40%;
-      }
-      .container-left{
-        widht: 60%;
-      }
-    </style>
-   
+          display: flex;
+          flex-direction: row;
        
+          justify-content: space-between;
+        }
+        .container-left{
+          width: 85%;
       
+        }
+        .container-right{
+          width: 15%;
      
-
+        }
+        .container-middle{
+          width: 60%;
+          flex-direction: row;
+          background-color: brown;
+        }
+        .container-link{
+          width: 40;
+          background-color: aqua;
+        }
+    </style>
+    <div id="message">
+      
+  </div>
     <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom noprint">
       <div class="container">
      
         <div class="container-sm noprint" style="font-family: sarabun;">
-          <div class="container-left">
+          <div class="container-left noprint">
             <p>ระบบค้นหาผลการตรวจสุขภาพทางอินเตอร์เน็ต</p>
           </div>
           <div class="container-right ms-5 text-end noprint" id="datetime"></div>
