@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyB42FEfQ7FBJdraDbAqBB3KdG_Nt0-I4tU';
+const apiKey = 'AIzaSyBmlGsIpynjUrE3PKnoT-RrCKgyb_844Sg';
 const spreadsheetId = '1Vlbfxl6aQq9FOBiM2RyoFLIo5L0lOwCaQogrG4nxj8A';
 const rangesheet1 = 'Main!A3:ZZ'; 
 const rangesheet2 = 'Outlab!A2:ZZ';
